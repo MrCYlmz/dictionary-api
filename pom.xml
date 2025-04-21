@@ -30,8 +30,8 @@
 			<artifactId>spring-boot-starter-web-services</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.pcs</groupId>
-			<artifactId>dictionary-openapi</artifactId>
+			<groupId>com.mrdew</groupId>
+			<artifactId>dic-openapi</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 
