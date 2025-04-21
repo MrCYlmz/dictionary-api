@@ -1,0 +1,22 @@
+# docker-compose.yml
+
+version: '3.8' # Specifies the Compose file version (optional for newer versions, but good practice)
+
+services:
+
+  db:
+    image: postgres:16
+    container_name: my_postgres_container
+    environment:
+      POSTGRES_PASSWORD: Dew
+      POSTGRES_USER: MrDew
+      POSTGRES_DB: my_dictionary_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+    driver: local
